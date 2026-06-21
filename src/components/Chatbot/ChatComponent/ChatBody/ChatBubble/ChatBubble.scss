@@ -1,0 +1,82 @@
+.chat-bubble-container {
+    font-family: 'Inter', sans-serif;
+
+    .bubble-styling {
+        padding: 12px 16px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .message-styling {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    .timestamp-styling {
+        font-size: 11px;
+        opacity: 0.6;
+
+    }
+
+    .bot-bubble-container {
+        @extend .bubble-styling;
+        background: #E6E6E6;
+        color: #000000;
+
+        .message {
+            @extend .message-styling;
+            word-break: break-word;
+
+            p {
+                margin: 0;
+            }
+
+            ul,
+            ol {
+                margin: 0.5rem 0;
+                padding-left: 1.5rem;
+            }
+
+            li {
+                margin: 0.25rem 0;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: 0.5rem 0;
+            }
+
+            pre {
+                overflow-x: auto;
+                padding: 0.75rem;
+                border-radius: 8px;
+            }
+        }
+
+        .timestamp {
+            @extend .timestamp-styling;
+        }
+    }
+
+    .user-bubble-container {
+        @extend .bubble-styling;
+        background: #6F00FF;
+        color: #FFFFFF;
+
+        .message {
+            @extend .message-styling;
+        }
+
+        .timestamp {
+            @extend .timestamp-styling;
+            align-self: flex-end;
+        }
+    }
+}

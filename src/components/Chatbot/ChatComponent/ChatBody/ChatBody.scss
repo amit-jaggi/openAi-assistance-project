@@ -1,0 +1,15 @@
+.chat-body-wrapper {
+    width: 100%;
+    height: calc(100% - 8rem);
+    border-top: 2px solid rgba(#000000, 0.05);
+    border-bottom: 2px solid rgba(#000000, 0.05);
+    padding: 0.5rem 0.25rem;
+
+    .chat-body-container {
+        height: 100%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

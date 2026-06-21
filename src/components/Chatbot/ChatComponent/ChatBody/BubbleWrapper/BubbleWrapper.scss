@@ -1,0 +1,19 @@
+.bubble-wrapper {
+    // border: 1px solid blue;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+
+    .svg-container {
+        display: grid;
+        place-items: center;
+    }
+
+    .message-container {
+        max-width: 70%;
+    }
+
+    &.reverse-layout {
+        flex-direction: row-reverse;
+    }
+}
