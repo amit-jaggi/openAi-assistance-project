@@ -1,7 +1,7 @@
 import './ChatComponent.scss';
 import ChatHeader from './ChatHeader/ChatHeader';
 import ChatBody from './ChatBody/ChatBody';
-import ChatFooter from './ChatFooter/ChatFooter';
+import ChatFooter from './ChatFooterr/ChatFooter';
 
 export default function ChatComponent() {
   return (
