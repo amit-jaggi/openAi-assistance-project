@@ -1,4 +1,4 @@
-import useChatbot from '../hooks/useChatbot';
+import useChatbot from '../hooks/useChatBot';
 import { ChatbotContext } from '../context/chatBotContext';
 
 export default function ChatbotProvider({

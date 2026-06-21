@@ -5,7 +5,7 @@ const ai = new GoogleGenAI({
 	apiKey: import.meta.env.VITE_GEMINI_API_KEY,
 });
 
-const useChatbot = () => {
+const useChatBot = () => {
 	const [messagesObj, setMessagesObj] = useState({
 		isFetching: false,
 		messages: [
@@ -53,4 +53,4 @@ const useChatbot = () => {
 	return { messagesObj, sendMessage };
 };
 
-export default useChatbot;
+export default useChatBot;
